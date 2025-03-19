@@ -1,0 +1,713 @@
+@import 'bootstrap';
+@import 'animate.css';
+
+/* #region ROOT */
+:root {
+    --progress-bar-width: 200px;
+    --progress-bar-height: 200px;
+    --font-size: 2rem;
+}
+
+/* #region COLORI */
+
+/* #region font color */
+.color-html {
+    color: #DD4B25;
+}
+
+.color-css {
+    color: #254BDD;
+}
+
+.color-bootstrap {
+    color: #820AFA;
+}
+
+.color-javascript {
+    color: #EFD81D;
+}
+
+.color-php {
+    color: #7377AD;
+}
+
+.color-laravel {
+    color: #F72C1F;
+}
+
+.color-mysql {
+    color: #015A85;
+}
+
+.color-github {
+    color: #1F2328;
+}
+
+.color-gitbash {
+    color: #89CC5C;
+}
+
+/* #endregion */
+
+/* #region bg color */
+.bg-bleuclaire {
+    background-color: #64FFDA;
+}
+
+.bg-html {
+    background-color: #DD4B25;
+}
+
+.bg-css {
+    background-color: #254BDD;
+}
+
+.bg-bootstrap {
+    background-color: #820AFA;
+}
+
+.bg-javascript {
+    background-color: #EFD81D;
+}
+
+.bg-php {
+    background-color: #7377AD;
+}
+
+.bg-laravel {
+    background-color: #F72C1F;
+}
+
+.bg-mysql {
+    background-color: #015A85;
+}
+
+.bg-github {
+    background-color: #1F2328;
+}
+
+.bg-gitbash {
+    background-color: #89CC5C;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+.secondaryColor {
+    color: #A8A8A8;
+}
+
+a {
+    text-decoration: none;
+    color: #64FFDA;
+}
+
+.viewport-100 {
+    min-height: 100vh;
+    padding: 3vh;
+
+}
+
+body {
+    background-color: #212529;
+    color: #64FFDA;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 262;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* #endregion */
+
+/* #region H1 intro only-lg */
+.h1navbar {
+    /* border-bottom: 1px solid #A8A8A8; */
+    height: 15vh;
+    align-content: center;
+    font-size: 4.6vw;
+    background-color: #343A40;
+    font-weight: 500;
+    text-shadow: #212529 0.1em 0.1em 0.2em;
+    margin: 0px 0px 0px 0px;
+}
+
+.h1navbar:hover {
+    transition: all 0.3s linear;
+    font-size: 5vw;
+}
+
+#h1-1 {
+    animation: bounceInRight 2.5s linear;
+}
+
+#h1-2 {
+    animation: bounceInLeft 2.5s linear;
+}
+
+#h1-3 {
+    animation: bounceInRight 2.5s linear;
+}
+
+#h1-4 {
+    animation: bounceInLeft 2.5s linear;
+}
+
+/* #endregion */
+
+/* #region navbar */
+.navbar {
+    top: 0;
+    height: 25vh;
+    z-index: 10;
+    background-color: #212529;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+
+}
+
+#logo-navbar {
+    height: 8vw;
+    animation: rotate 10s 0s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.link-navbar {
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 2.6vw;
+    padding: 3vh;
+
+
+}
+
+.link-navbar:hover {
+    transition: all 0.1s linear;
+    transform: scale(1.01);
+    border-bottom: whitesmoke 5px solid;
+    border-top: 5px whitesmoke solid;
+}
+
+/* #endregion */
+
+/* #region btn */
+.btn-contact {
+    background-color: #64FFDA;
+    color: #212529;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    font-size: 2.5vw;
+}
+
+.btn-contact:hover {
+    background-color: #212529;
+    color: #64FFDA;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.btn-contact:active {
+    transition: all 0.2s linear;
+    background-color: #212529;
+    color: #64FFDA;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transform: scale(0.95);
+}
+
+.btn-cv {
+    color: #64FFDA;
+    background-color: #212529;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    font-size: 2.5vw;
+}
+
+.btn-cv:hover {
+    background-color: #64FFDA;
+    color: #212529;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transition: all 0.2s linear;
+    transform: scale(1.1);
+}
+
+.btn-cv:active {
+    transition: all 0.2s linear;
+    background-color: #64FFDA !important;
+    color: #212529 !important;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transform: scale(0.95);
+}
+
+.timer-button {
+    margin-top: 1vw;
+    padding: 1vw 2vw;
+    background-color: #64FFDA;
+    color: #212529;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    font-size: 3vw;
+}
+
+.timer-button:hover {
+    background-color: #212529;
+    color: #64FFDA;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.timer-button:active {
+    transition: all 0.2s linear;
+    background-color: #212529;
+    color: #64FFDA;
+    font-weight: 600;
+    border: 2px solid #343A40;
+    transform: scale(0.95);
+}
+
+/* #endregion */
+
+/* #region ABOUT SECTION*/
+#about {
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-about {
+    font-size: 6vw;
+}
+
+.about-text {
+    font-size: 2.5vw;
+    text-align: end;
+}
+
+/* #endregion */
+
+/* #region SKILLS SECTION */
+.profile-img {
+    margin: 2vh 0vh;
+}
+
+#skills {
+    color: #212529;
+    min-height: 80vh;
+    padding: 5vh;
+}
+
+.circular-progress {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #212529;
+}
+
+.inner-circle {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 30px);
+    height: calc(var(--progress-bar-height) - 30px);
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.percentage {
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+}
+
+/* #endregion */
+
+/* #region TIMER */
+.h1-timer {
+    font-size: 6vw;
+}
+
+.h2-timer {
+    padding: 4vh 10vh;
+    font-size: 3vw;
+    width: 70vw;
+    transition: all 0.2s linear;
+    color: whitesmoke;
+}
+
+.h2-timer a {
+    color: whitesmoke;
+}
+
+.h2-timer:hover {
+    transform: scale(1.05);
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.timer-span {
+    color: whitesmoke;
+}
+
+/* #endregion */
+
+/* #region ABOUT PAGE */
+.img-about {
+    height: 35vw !important;
+}
+
+.title-card-about {
+    font-size: 2.8vw;
+}
+
+.description-about-me {
+    font-size: 1.7vw;
+}
+
+#firstSectionAbout svg {
+    height: 2.8vw;
+    width: 2.8vw;
+}
+
+/* #endregion */
+
+/* #region CARD PAGINA SKILLS */
+.skill-card {
+    min-height: 60vh;
+
+    padding: 0vh;
+    border: 8px solid white;
+}
+
+.card-title-skills {
+    min-height: 5rem;
+    align-content: center;
+}
+
+.li-card-skills {
+    font-size: 1.2rem;
+}
+
+.progress-bar {
+    /* background-color: #212529; */
+    color: white;
+
+}
+
+/* #endregion */
+
+/* #region FORM CONTATTI */
+form svg {
+    height: calc(1.425rem + 2.1vw);
+}
+
+form button {
+    font-size: 2vw !important;
+    margin-left: 1vh;
+    background-color: white !important;
+    color: #212529 !important;
+}
+
+.form-control {
+    border: 1px solid #212529;
+}
+
+/* #endregion */
+
+/* #region animazioni alla viewport */
+.zoomIn1 {
+    transition: all 0s linear;
+    transform: scale(0);
+}
+
+.zoomIn1.on {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.zoomIn2 {
+    transition: all 0s linear;
+    transform: scale(0);
+}
+
+.zoomIn2.on {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.zoomIn3 {
+    transition: all 0s linear;
+    transform: scale(0);
+}
+
+.zoomIn3.on {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+/* #endregion */
+
+/* #region MEDIA QUERY */
+@media (max-width: 982px) {
+
+    .vh-100 {
+        height: 100% !important;
+    }
+
+    /* #region NAVBAR */
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 5vh;
+        color: whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        padding-bottom: 0px;
+    }
+
+    .anim-nav-item1 {
+        animation: lightSpeedInLeft 1s linear;
+    }
+
+    .anim-nav-item2 {
+        animation: lightSpeedInRight 1s linear;
+    }
+
+    #logo-navbar {
+        height: 18vh;
+    }
+
+    /* #endregion */
+
+    /* #region MODAL */
+    .btn-modal {
+        display: block;
+        position: absolute;
+        padding: 2vh 3vh;
+        background-color: whitesmoke;
+        border-radius: 0% 50% 0% 50%;
+        position: fixed;
+        bottom: -2vh;
+        left: -2.3vh;
+        z-index: 999;
+        background-color: transparent;
+        color: black;
+        opacity: 0.8;
+        border: 3px black solid;
+        background-color: white;
+    }
+
+    .btn-back-modal {
+        padding: 1vh 2vh;
+        font-size: 3vh;
+        background-color: whitesmoke;
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .h1-modal {
+        color: whitesmoke;
+        font-size: 5.5vh;
+    }
+
+    .btn-close-x-modal {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        padding: 1vh 2vh;
+    }
+
+    .ul-modal {
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        padding-top: 0vh;
+        padding-bottom: 3vh;
+    }
+
+    .svgSocialMedia {
+        margin: 3vh 1vh;
+        position: relative;
+        bottom: 0px;
+        animation: zoomInUp 1s linear;
+    }
+
+    /* #endregion */
+
+    /* #region WELCOME SECTION 1 H1/H3/H5 */
+    .h1-welcome {
+        margin-top: 5vh;
+        font-size: 10vw;
+    }
+
+    .h3-welcome {
+        font-size: 7vw;
+    }
+
+    .h5-welcome {
+        font-size: 5vw;
+    }
+
+    /* #endregion */
+
+    /* #region BTN */
+    .btn-contact {
+        font-size: 4vw;
+    }
+
+    .btn-cv {
+        font-size: 4vw;
+    }
+
+    /* #endregion */
+
+    /* #region ABOUT */
+    #about {
+        min-height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .title-about {
+        margin-top: 5vh;
+        font-size: 9vw;
+    }
+
+    .about-text {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    /* #endregion */
+
+    /* #region TIMER */
+    .h1-timer {
+        font-size: 8vw;
+    }
+
+    .h2-timer {
+        padding: 1vh 1vh;
+        font-size: 6vw;
+        width: 70vw;
+        transition: all 0.2s linear;
+        color: whitesmoke;
+    }
+
+    .h2-timer a {
+        color: whitesmoke;
+    }
+
+    .h2-timer:hover {
+        transform: scale(1.05);
+        border-bottom: 1px solid whitesmoke;
+
+    }
+
+    .timer-span {
+        color: whitesmoke;
+    }
+
+    .timer-button {
+        margin-top: 1vw;
+        padding: 1vw 2vw;
+        background-color: #64FFDA;
+        color: #212529;
+        font-weight: 600;
+        border: 2px solid #343A40;
+        font-size: 5vw;
+    }
+
+    /* #endregion */
+
+    /* #region ABOUT */
+    .img-about {
+        height: 90vw !important;
+        width: 90vw !important;
+    }
+
+    .title-card-about {
+        font-size: 8vw;
+    }
+
+    #firstSectionAbout svg {
+        height: 2.8vw;
+        width: 2.8vw;
+    }
+
+    .description-about-me {
+        font-size: 1.4rem;
+        max-height: 70vh;
+        overflow-y: scroll;
+    }
+
+    /* #endregion */
+}
+
+@media (min-width: 983px) {
+
+    /* #region MODAL */
+    .btn-modal {
+        display: none !important;
+    }
+
+    #exampleModal {
+        display: none;
+    }
+
+    /* #endregion */
+
+    /* #region NAVBAR */
+    .navbar {
+        height: 20vh;
+    }
+
+    /* #endregion */
+
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --progress-bar-width: 150px;
+        --progress-bar-height: 150px;
+        --font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --progress-bar-width: 120px;
+        --progress-bar-height: 120px;
+        --font-size: 1rem;
+    }
+}
+
+/* #endregion */
