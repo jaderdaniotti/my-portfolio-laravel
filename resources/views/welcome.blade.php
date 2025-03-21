@@ -148,7 +148,7 @@
                                               </div>
                                           </div>
                                       </div>
-                                  </div>
+                                 
                               </section> --}}
     <section class="viewport-100 align-content-center text-center">
       <h1 class="text-center h1-timer bold">Tempo trascorso sul sito: <br>
